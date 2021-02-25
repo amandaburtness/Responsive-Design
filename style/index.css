@@ -26,14 +26,15 @@ vertical-align: baseline;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Permanent+Marker&family=Rock+Salt&display=swap');
 
+/* general info for everything */
 * {
     box-sizing: border-box;
     max-width: 100%;
-    font-size: 10px;
+    font-size: 62.5%; /* make sure that font sizes are accessable to everyone */
     
 }
 
-
+/* Main name on all pages */
 #name {
     display: flex;
     justify-content: center;
@@ -44,6 +45,7 @@ h1 {
     font-size: 5rem;
 }
 
+/* Decoration and non decoration for links in the navigation */
 a {
     text-decoration: none;
 }
@@ -73,7 +75,7 @@ nav {
     font-size: 1.75rem;
 }
 
-
+/* in the index.html - this is the about me section blurb */
 #bannerwords {
     text-align: center;
     padding: % 15% 0% 15%;
@@ -98,6 +100,7 @@ nav {
     font-weight: bold;
 }
 
+/* all about the projects I have done, or will do in this case */
 #projects {
     display: flex;
     justify-content: space-around;
@@ -118,22 +121,7 @@ nav {
     padding: 0 2vw;
 }
 
-#pongo1 {
-
-}
-
-#burrito1 {
-
-}
-
-#pongo2 {
-
-}
-
-#burrito2 {
-
-}
-
+/* on the about.html page - the about me section describing me */
 #about1 { 
     display: flex;
     align-items: center;
@@ -171,6 +159,7 @@ nav {
     font-family: 'Rock Salt', cursive;
 }
 
+/* decoration for any unordered lists, specifically the education section in about.html */
 ul {
     list-style-type: none;
     font-size: 1.5rem;
@@ -188,6 +177,7 @@ p {
     padding: 4%
 }
 
+/* phone number and email section in contact.html */
 #contactme {
     display: flex;
     align-items: center;
@@ -195,4 +185,18 @@ p {
     flex-direction: column;
     padding: 2vh 20vh;
     font-size: 1.5rem;
+}
+
+
+/* start of media queries */
+
+/* media query for 800px */
+@media (max-width: 800px) {
+
+}
+
+
+/* media query for 500px */
+@media (max-width: 500px) {
+    
 }
