@@ -216,7 +216,8 @@ footer {
     #bannerwords h2 {
         padding: 0px;
     }
-    
+
+    /* make sure that images and projects create a box and in order 1, 2, 3, 4 */
     #projects {
         flex-direction: row;
         flex-wrap: wrap;
@@ -233,16 +234,32 @@ footer {
 
     #about2 ul {
         padding: 4% 4%;
-    }
-
-    footer {
-        margin: 0 auto;
-        padding: 0;
-    }
+    }   
 }
 
 
 /* media query for 500px */
 @media (max-width: 500px) {
-    
+    h1 {
+        text-align: center;
+    }
+    /* make nav vertical and centered */
+    #nav nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #description p {
+        padding-bottom: 10%;
+    }
+
+    /* make education a column, instead of row */
+    #about2 {
+        flex-direction: column;
+    }
+
+    #about2 ul li {
+        padding: 4% 0;
+    }
 }
